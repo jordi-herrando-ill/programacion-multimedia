@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    tools:context=".FormularioActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF0000"
+    android:elevation="4dp">
+
+    <!-- ImageView para la imagen de la Pokeball (a la derecha) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+    android:layout_marginEnd="16dp"
+    android:src="@drawable/pokeballroja"
+    android:contentDescription="Pokeball" />
+
+    <!-- ImageView para el logo de Pokemon (a la izquierda) -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+    android:layout_marginStart="16dp"
+    android:src="@drawable/pokemonentrenador"
+    android:contentDescription="Pokemon Logo" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pokemon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp">
+
+        <!-- Contenedor principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Campos de entrada para Pokemon 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokemon 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Nombre -->
+            <EditText
+                android:id="@+id/etNombre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+            <!-- HP -->
+            <EditText
+                android:id="@+id/etHp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="HP" />
+
+            <!-- Ataque -->
+            <EditText
+                android:id="@+id/etAtaque1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Ataque" />
+
+            <!-- Defensa -->
+            <EditText
+                android:id="@+id/etDefensa1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Defensa" />
+
+            <!-- Ataque Especial -->
+            <EditText
+                android:id="@+id/etAtaqueEsp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Ataque Especial" />
+
+            <!-- Defensa Especial -->
+            <EditText
+                android:id="@+id/etDefensaEsp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Defensa Especial" />
+
+            <!-- Campos de entrada para Pokemon 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pokemon 2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <!-- Nombre -->
+            <EditText
+                android:id="@+id/etNombre2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+            <!-- HP -->
+            <EditText
+                android:id="@+id/etHp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="HP" />
+
+            <!-- Ataque -->
+            <EditText
+                android:id="@+id/etAtaque2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Ataque" />
+
+            <!-- Defensa -->
+            <EditText
+                android:id="@+id/etDefensa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Defensa" />
+
+            <!-- Ataque Especial -->
+            <EditText
+                android:id="@+id/etAtaqueEsp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Ataque Especial" />
+
+            <!-- Defensa Especial -->
+            <EditText
+                android:id="@+id/etDefensaEsp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Defensa Especial" />
+
+            <!-- Botón de combate -->
+            <Button
+                android:id="@+id/btnCombate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMBATE"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
